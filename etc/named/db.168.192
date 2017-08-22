@@ -1,0 +1,25 @@
+;
+;       Zone File for ".loc" - Internal Use ONLY
+;
+$TTL 1D
+@             IN      SOA       ns.camunda.loc.  ns.loc.  (
+                                10             ; Serial
+                                8H             ; Refresh
+                                2H             ; Retry
+                                4W             ; Expire
+                                1D )           ; Minimum
+;
+@              IN      NS       ns.camunda.loc.          ; Name Server for the domain
+1	IN	PTR	ns.camunda.loc.
+;
+178.111	IN	PTR	ci5.camunda.loc.
+178.106	IN	PTR	ci3.camunda.loc.
+178.107	IN	PTR	ci4.camunda.loc.
+178.122	IN	PTR	ci1.camunda.loc.
+178.102	IN	PTR	ci7.camunda.loc.
+178.103	IN	PTR	ci6.camunda.loc.
+178.125	IN	PTR	ci2.camunda.loc.
+178.108	IN	PTR	ci8.camunda.loc.
+178.109	IN	PTR	ci9.camunda.loc.
+178.177	IN	PTR	ci0.camunda.loc.
+;
