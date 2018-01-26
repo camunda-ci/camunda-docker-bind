@@ -1,0 +1,7 @@
+zone "168.192.in-addr.arpa" IN {
+	type master;
+	file "/etc/bind/zone/master/168.192.in-addr.arpa";
+	allow-transfer {none;};
+	allow-update {none;};
+	allow-query {any;};
+};

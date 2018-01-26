@@ -1,0 +1,7 @@
+zone "camunda.loc" IN {
+	type master;
+	file "/etc/bind/zone/master/camunda.loc";
+	allow-transfer {none;};
+	allow-update {none;};
+	allow-query {any;};
+};

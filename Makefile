@@ -1,7 +1,7 @@
 # image settings for the docker image name, tags and
 # container name while running
 IMAGE_NAME=registry.camunda.com/camunda-bind
-TAGS=latest
+TAGS=hq
 NAME=bind
 
 # parent image name
@@ -12,7 +12,7 @@ ADDITIONAL_TAGS=$(wordlist 2, $(words $(TAGS)), $(TAGS))
 # the image name which will be build
 IMAGE=$(IMAGE_NAME):$(FIRST_TAG)
 # options to use for running the image, can be extended by FLAGS variable
-OPTS=--name $(NAME) -t $(FLAGS)
+OPTS=-p 53:53 -p 10000:10000 --network host --name $(NAME) -t $(FLAGS)
 # the docker command which can be configured by the DOCKER_OPTS variable
 DOCKER=docker $(DOCKER_OPTS)
 

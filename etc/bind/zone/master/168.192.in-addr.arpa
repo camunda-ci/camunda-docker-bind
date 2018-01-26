@@ -1,0 +1,32 @@
+;
+;       Zone File PTR for "camunda.loc" - Internal Use ONLY
+;
+$ORIGIN 168.192.in-addr.arpa.
+$TTL 86400
+@ IN SOA ns.camunda.loc. mail.168.192.in-addr.arpa. (
+	1					; Serial
+	43200			    ; Refresh
+	180				    ; Retry
+	1209600		        ; Expire
+	10800			    ; Minimum
+)
+
+; name servers
+  IN      NS      ns.camunda.loc.
+
+; PTR Records
+122.178	IN	PTR	ns.camunda.loc.
+
+177.178	IN	PTR	ci0.camunda.loc.
+122.178	IN	PTR	ci1.camunda.loc.
+125.178	IN	PTR	ci2.camunda.loc.
+106.178	IN	PTR	ci3.camunda.loc.
+107.178	IN	PTR	ci4.camunda.loc.
+111.178	IN	PTR	ci5.camunda.loc.
+103.178	IN	PTR	ci6.camunda.loc.
+102.178	IN	PTR	ci7.camunda.loc.
+108.178	IN	PTR	ci8.camunda.loc.
+109.178	IN	PTR	ci9.camunda.loc.
+
+244.178 IN  PTR nas.camunda.loc.
+100.50	IN	PTR	ap-controller.camunda.loc.

@@ -1,0 +1,9 @@
+zone "consul" {
+	type forward;
+	forwarders {
+		192.168.178.122 port 8600;
+		192.168.178.125 port 8600;
+		192.168.178.111 port 8600;
+	};
+	forward only;
+};
