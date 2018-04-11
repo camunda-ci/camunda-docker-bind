@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 ENV BIND_USER=bind \
     BIND_VERSION=1:9.10.3 \
-    WEBMIN_VERSION=1.870 \
+    WEBMIN_VERSION=1.881 \
     DATA_DIR=/data
 
 RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends && \
@@ -17,6 +17,8 @@ RUN wget http://www.webmin.com/jcameron-key.asc -qO - | apt-key add - && \
     rm -rf /var/lib/apt/lists/*lz4 && \
     apt-get -o Acquire::GzipIndexes=false update && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y bind9=${BIND_VERSION}* bind9-host=${BIND_VERSION}* webmin=${WEBMIN_VERSION}* dnsutils && \
+    mkdir -p /var/named/log /var/named/data && \
+    chown -R bind:bind /var/named && \
     rm -rf /var/lib/apt/lists/*
 
 RUN addgroup --gid 2000 webmin && \
@@ -28,6 +30,6 @@ RUN addgroup --gid 2000 webmin && \
 COPY /etc/bind /etc/bind
 COPY bin/docker-entrypoint.sh /sbin/docker-entrypoint.sh
 
-EXPOSE 53/udp 53/tcp 10000/tcp
+EXPOSE 53/udp 53/tcp 8053/tcp 10000/tcp
 ENTRYPOINT ["/sbin/docker-entrypoint.sh"]
 CMD ["/usr/sbin/named", "-g"]
