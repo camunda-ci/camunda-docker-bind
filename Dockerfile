@@ -2,7 +2,7 @@ FROM ubuntu:16.04
 
 ENV BIND_USER=bind \
     BIND_VERSION=1:9.10.3 \
-    WEBMIN_VERSION=1.881 \
+    WEBMIN_VERSION=1.900 \
     DATA_DIR=/data
 
 RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends && \
