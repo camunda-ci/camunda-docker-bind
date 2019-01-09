@@ -30,4 +30,8 @@ ci8.camunda.loc.            IN	A	192.168.178.108
 ci9.camunda.loc.            IN	A	192.168.178.109
 nas.camunda.loc.            IN  A   192.168.178.244
 
+hp-3rd-floor.camunda.loc.	IN	A	192.168.178.157
+kyocera-5th-floor.camunda.loc.	IN	A	192.168.178.160
+kyocera-backoffice.camunda.loc.	IN	A	192.168.178.166
+
 ap-controller.camunda.loc.	IN	A	192.168.50.100
