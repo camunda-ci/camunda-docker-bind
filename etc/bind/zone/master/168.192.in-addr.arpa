@@ -33,4 +33,6 @@ $TTL 86400
 160.178	IN	PTR	kyocera-5th-floor.camunda.loc.
 166.178	IN	PTR	kyocera-backoffice.camunda.loc.
 
+157.44	IN	PTR	schluessel-server.camunda.loc.
+
 100.50	IN	PTR	ap-controller.camunda.loc.

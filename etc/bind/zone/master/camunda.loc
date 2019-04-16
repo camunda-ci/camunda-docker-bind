@@ -34,4 +34,6 @@ hp-3rd-floor.camunda.loc.	IN	A	192.168.178.157
 kyocera-5th-floor.camunda.loc.	IN	A	192.168.178.160
 kyocera-backoffice.camunda.loc.	IN	A	192.168.178.166
 
+schluessel-server.camunda.loc.	IN	A	192.168.44.157
+
 ap-controller.camunda.loc.	IN	A	192.168.50.100
