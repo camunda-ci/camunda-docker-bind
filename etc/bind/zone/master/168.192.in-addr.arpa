@@ -29,6 +29,10 @@ $TTL 86400
 109.178	IN	PTR	ci9.camunda.loc.
 244.178	IN	PTR	nas.camunda.loc.
 
+11.0	IN PTR	cam-int-1.camunda.loc.
+21.0	IN PTR	cam-int-2.camunda.loc.
+31.0	IN PTR	cam-int-3.camunda.loc.
+
 157.178	IN	PTR	hp-3rd-floor.camunda.loc.
 160.178	IN	PTR	kyocera-5th-floor.camunda.loc.
 166.178	IN	PTR	kyocera-backoffice.camunda.loc.
