@@ -82,8 +82,8 @@ shell: ## start interactive container with bash
 
 .PHONY: test
 test: daemon ## test if image starts and database becomes ready afterwards
-	$(DOCKER) exec -t $(NAME) bash -c 'dig kyocera-5th-floor.camunda.loc. @localhost -p 53 +notcp' | grep --quiet 'kyocera-5th-floor.camunda.loc. 86400 IN	A	192.168'
-	$(DOCKER) exec -t $(NAME) bash -c 'dig kyocera-5th-floor.camunda.loc. @localhost -p 53 +tcp' | grep --quiet 'kyocera-5th-floor.camunda.loc. 86400 IN	A	192.168'
+	$(DOCKER) exec -t $(NAME) bash -c 'dig kyocera-5th-floor.camunda.loc. @localhost -p 53 +notcp' | grep --quiet 'kyocera-5th-floor.camunda.loc. 3600 IN	A	192.168'
+	$(DOCKER) exec -t $(NAME) bash -c 'dig kyocera-5th-floor.camunda.loc. @localhost -p 53 +tcp' | grep --quiet 'kyocera-5th-floor.camunda.loc. 3600 IN	A	192.168'
 	$(DOCKER) exec -t $(NAME) bash -c 'curl localhost:8053' | grep --quiet 'statistics'
 	-$(DOCKER) rm -f $(NAME)
 

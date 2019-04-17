@@ -2,9 +2,9 @@
 ;       Zone File for "camunda.loc" - Internal Use ONLY
 ;
 $ORIGIN camunda.loc.
-$TTL 1d
+$TTL 1h
 
-@						IN SOA ns.camunda.loc. mail.camunda.loc. (
+@					1d	IN SOA ns.camunda.loc. mail.camunda.loc. (
 							1	; Serial
 							12h	; Refresh
 							3m	; Retry
@@ -13,7 +13,7 @@ $TTL 1d
 						)
 
 ; name servers
-						IN NS	ns.camunda.loc.
+					1d	IN NS	ns.camunda.loc.
 
 ; A records
 ns						IN A	192.168.178.122

@@ -2,9 +2,9 @@
 ;       Zone File PTR for "camunda.loc" - Internal Use ONLY
 ;
 $ORIGIN 168.192.in-addr.arpa.
-$TTL 1d
+$TTL 1h
 
-@						IN SOA ns.camunda.loc. mail.168.192.in-addr.arpa. (
+@					1d	IN SOA ns.camunda.loc. mail.168.192.in-addr.arpa. (
 							1	; Serial
 							12h	; Refresh
 							3m	; Retry
@@ -13,7 +13,7 @@ $TTL 1d
 						)
 
 ; name servers
-						IN NS	ns.camunda.loc.
+					1d	IN NS	ns.camunda.loc.
 
 ; PTR records
 122.178					IN PTR	ns.camunda.loc.
