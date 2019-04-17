@@ -2,42 +2,42 @@
 ;       Zone File for "camunda.loc" - Internal Use ONLY
 ;
 $ORIGIN camunda.loc.
-$TTL 86400
-@ IN SOA ns.camunda.loc. mail.camunda.loc. (
-	1						; Serial
-	43200				    ; Refresh
-	180					    ; Retry
-	1209600			        ; Expire
-	10800				    ; Minimum
-)
+$TTL 1d
 
-; name servers - NS records
-  IN      NS      ns.camunda.loc.
+@						IN SOA ns.camunda.loc. mail.camunda.loc. (
+							1	; Serial
+							12h	; Refresh
+							3m	; Retry
+							14d	; Expire
+							3h	; Minimum
+						)
 
-; name servers - A records
-ns.camunda.loc.            IN  A   192.168.178.122
+; name servers
+						IN NS	ns.camunda.loc.
 
-; 192.168.0.0/16 - A records
-ci0.camunda.loc.            IN	A	192.168.178.177
-ci1.camunda.loc.            IN	A	192.168.178.122
-ci2.camunda.loc.            IN	A	192.168.178.125
-ci3.camunda.loc.            IN	A	192.168.178.106
-ci4.camunda.loc.            IN	A	192.168.178.107
-ci5.camunda.loc.            IN	A	192.168.178.111
-ci6.camunda.loc.            IN	A	192.168.178.103
-ci7.camunda.loc.            IN	A	192.168.178.102
-ci8.camunda.loc.            IN	A	192.168.178.108
-ci9.camunda.loc.            IN	A	192.168.178.109
-nas.camunda.loc.            IN  A   192.168.178.244
+; A records
+ns						IN A	192.168.178.122
+
+ci0						IN A	192.168.178.177
+ci1						IN A	192.168.178.122
+ci2						IN A	192.168.178.125
+ci3						IN A	192.168.178.106
+ci4						IN A	192.168.178.107
+ci5						IN A	192.168.178.111
+ci6						IN A	192.168.178.103
+ci7						IN A	192.168.178.102
+ci8						IN A	192.168.178.108
+ci9						IN A	192.168.178.109
+nas						IN A	192.168.178.244
 
 cam-int-1				IN A	192.168.0.11
 cam-int-2				IN A	192.168.0.21
 cam-int-3				IN A	192.168.0.31
 
-hp-3rd-floor.camunda.loc.	IN	A	192.168.178.157
-kyocera-5th-floor.camunda.loc.	IN	A	192.168.178.160
-kyocera-backoffice.camunda.loc.	IN	A	192.168.178.166
+hp-3rd-floor			IN A	192.168.178.157
+kyocera-5th-floor		IN A	192.168.178.160
+kyocera-backoffice		IN A	192.168.178.166
 
-schluessel-server.camunda.loc.	IN	A	192.168.44.157
+schluessel-server		IN A	192.168.44.157
 
-ap-controller.camunda.loc.	IN	A	192.168.50.100
+ap-controller			IN A	192.168.50.100
