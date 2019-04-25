@@ -41,3 +41,11 @@ kyocera-backoffice		IN A	192.168.178.166
 schluessel-server		IN A	192.168.44.157
 
 ap-controller			IN A	192.168.50.100
+
+; A records (round robin)
+cam-int-swarm			IN A	192.168.0.11 ; cam-int-1
+cam-int-swarm			IN A	192.168.0.21 ; cam-int-2
+
+; CNAME service records
+portainer-agent			IN CNAME	cam-int-swarm
+portainer				IN CNAME	cam-int-swarm
