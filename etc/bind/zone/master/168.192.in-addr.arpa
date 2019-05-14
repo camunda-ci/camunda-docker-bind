@@ -16,7 +16,7 @@ $TTL 1h
 					1d	IN NS	ns.camunda.loc.
 
 ; PTR records
-122.178					IN PTR	ns.camunda.loc.
+11.0					IN PTR	ns.camunda.loc.
 
 177.178					IN PTR	ci0.camunda.loc.
 122.178					IN PTR	ci1.camunda.loc.

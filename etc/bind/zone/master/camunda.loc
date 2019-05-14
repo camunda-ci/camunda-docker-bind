@@ -16,7 +16,7 @@ $TTL 1h
 					1d	IN NS	ns.camunda.loc.
 
 ; A records
-ns						IN A	192.168.178.122
+ns						IN A	192.168.0.11
 
 ci0						IN A	192.168.178.177
 ci1						IN A	192.168.178.122
