@@ -1,6 +1,6 @@
 # image settings for the docker image name, tags and container name while running
 IMAGE_NAME?=registry.camunda.com/camunda-bind
-TAGS?=latest
+TAGS?=master
 NAME=bind
 
 VERSIONS=latest
