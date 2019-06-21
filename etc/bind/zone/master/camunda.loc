@@ -41,7 +41,7 @@ kyocera-backoffice		IN A	192.168.178.166
 
 schluessel-server		IN A	192.168.44.157
 
-dorte					IN A	192.168.178.204
+doerte					IN A	192.168.178.204
 horst					IN A	192.168.178.244
 
 ap-controller			IN A	192.168.50.100
