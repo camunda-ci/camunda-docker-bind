@@ -52,4 +52,4 @@ cam-int-swarm			IN A	192.168.0.21 ; cam-int-2
 
 ; CNAME service records
 portainer-agent			IN CNAME	cam-int-swarm
-portainer				IN CNAME	cam-int-swarm
+portainer				IN CNAME	cam-int-1 ; Note: not the whole swarm since some containers only run on cam-int-1
