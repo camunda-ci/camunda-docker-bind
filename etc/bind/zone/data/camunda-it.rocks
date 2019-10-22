@@ -1,0 +1,7 @@
+zone "camunda-it.rocks" {
+	type forward;
+	forwarders {
+		192.168.26.21 port 53;
+	};
+	forward only;
+};
